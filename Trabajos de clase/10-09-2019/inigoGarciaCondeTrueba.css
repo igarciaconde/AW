@@ -1,11 +1,10 @@
 
-body{
-    height: 100%;
+body,html{
     background-image: linear-gradient(to bottom,grey, black);
 }
 
 .backgroundTop{
-    background: #131334;
+    background: #131313;
     font-size: 18px; 
     font-weight: 400; 
     color: #ffffff;
@@ -22,13 +21,13 @@ body{
     padding-bottom: 6px;
 }
 
-#content{
-    display: flex;
-}
-
 .list{
     color: #ffffff;
     margin-left: 40px;
+}
+
+#content{
+    display: flex;
 }
 
 #img{
@@ -37,14 +36,11 @@ body{
     height: 120px;
     position: absolute;
     right: 80px;
-    
 }
 
 #form{
     background: lightgray;
     width: 480px;
     height: 170px;
-    margin-bottom: 10px;
-    position: absolute;
-    right: 80px;
+    
 }
