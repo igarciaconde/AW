@@ -1,0 +1,72 @@
+.rojo {
+    color: red;
+}
+
+.resaltado {
+    background: lightgray;
+}
+
+.comida {
+    padding: 5px;
+    background: greenyellow;
+}
+
+.desayuno {
+    padding: 5px;
+    background: yellow;
+}
+
+.break {
+    padding: 5px;
+    background: orchid;
+}
+
+.links{
+    padding: 4px;
+    color: white;
+    background: black;
+    text-decoration: none;
+}
+
+#tc {
+    border: 2px solid lightgray;
+}
+
+#comId {
+    background: green;
+}
+
+#brId{
+    background: darkmagenta;
+}
+
+#desId {
+    background: darkgoldenrod;
+}
+
+#wId{
+    background: transparent;
+}
+
+caption {
+    margin-top: 25px;
+    padding: 13px;
+    background: lightgray;
+}
+
+th{
+    padding: 5px;
+    background: lightgray
+}
+
+h1 {
+    padding: 40px;
+    background: darkred;
+    color: lightgray;
+    text-align: center;
+}
+
+img[src$=".png"] {
+    border: 2px dotted darkred;
+    border-radius: 200px 200px 200px 200px;
+}
