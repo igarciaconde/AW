@@ -1,3 +1,43 @@
+caption {
+    margin-top: 25px;
+    padding: 13px;
+    background: lightgray;
+}
+
+th{
+    padding: 5px;
+    background: lightgray
+}
+
+h1 {
+    padding: 40px;
+    background: darkred;
+    color: lightgray;
+    text-align: center;
+}
+
+img[src$=".png"] {
+    border: 2px dotted darkred;
+    border-radius: 200px 200px 200px 200px;
+}
+
+a:visited{
+    background: transparent;
+    color: gray;
+}
+
+tr:nth-child(even).table2{
+    padding: 5px;
+    color: black;
+    background: lightgray;
+}
+
+tr:nth-child(odd).table2{
+    padding: 5px;
+    color:black;
+    background: transparent;
+}
+
 .rojo {
     color: red;
 }
@@ -23,9 +63,16 @@
 
 .links{
     padding: 4px;
+    border-radius: 12px 12px 12px 12px;
     color: white;
     background: black;
     text-decoration: none;
+}
+
+.links:hover{
+    text-decoration: underline;
+    background: transparent;
+    background: darkred;
 }
 
 #tc {
@@ -48,25 +95,3 @@
     background: transparent;
 }
 
-caption {
-    margin-top: 25px;
-    padding: 13px;
-    background: lightgray;
-}
-
-th{
-    padding: 5px;
-    background: lightgray
-}
-
-h1 {
-    padding: 40px;
-    background: darkred;
-    color: lightgray;
-    text-align: center;
-}
-
-img[src$=".png"] {
-    border: 2px dotted darkred;
-    border-radius: 200px 200px 200px 200px;
-}
