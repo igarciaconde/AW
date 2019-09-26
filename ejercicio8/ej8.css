@@ -69,7 +69,7 @@ font-family: sans-serif;}
 }
 
 #res{
-    background-color: white;
+    background-color: red;
     color: dimgray;
     grid-column: 1/5;
     text-align: center;
