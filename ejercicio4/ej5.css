@@ -1,0 +1,57 @@
+
+*{
+    border: 1px solid yellow;
+}
+
+html{
+  
+    background-color: black;
+  
+    
+}
+
+body{
+    font-family: "Indie Flower";
+}
+
+h1{
+    color: white;
+    text-align: center;
+    background-image: url(cesped.png);
+    margin: 0px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+
+}
+
+a{
+    background-image: linear-gradient(green, yellow, green);
+    text-decoration: none;
+    color:black;
+    padding: 10px;
+}
+
+.enlaces{
+    margin-left: 1cm;
+    font-size: 20px;
+   
+}
+
+.titulo{
+    margin-left: 2cm;
+    color: green;
+    font-size: 25px;
+
+}
+
+p{
+    color:white;
+}
+
+#paneliz{
+    width: 75%;
+}
+
+#panelder{
+    width: 20%;
+}

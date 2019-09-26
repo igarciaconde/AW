@@ -1,0 +1,76 @@
+
+*{
+    font-family: sans-serif;
+}
+
+.rojo{
+    color:red;
+}
+
+.gris{
+    background: lightgray;
+    padding: 10px;
+}
+
+.amarillo{
+
+    background: rgb(255, 230, 0);
+}
+
+.morado{
+    background: rgb(241, 124, 226);
+}
+
+.verde{
+    background: rgb(103, 253, 33);
+}
+h1{
+    background: rgb(231, 50, 50);
+    padding: 40px;
+    text-align: center;
+}
+
+.opciones{
+
+    background: black;
+    border-style: solid;
+    border-color: grey;
+    color: white;
+    padding: 10px;
+}
+
+.opciones:hover{
+    background: linear-gradient(blue,skyblue);
+}
+
+.opciones:active{
+    color:red;
+}
+
+.resaltado{
+    background:lightgray;
+}
+
+#tc{
+    font-style: italic;
+
+}
+
+
+
+.deportes{
+   background-color: lightblue;
+   text-align: center;
+   padding: 10px;
+}
+
+.grisDep{
+    background-color: lightgray;
+    padding:20px;
+}
+
+img[src$="png"] { 
+    
+ background: black;
+    
+}
