@@ -1,1 +1,0 @@
-Iñigo García-Conde Trueba
