@@ -1,0 +1,58 @@
+.contenedor {
+    width: 300px;
+    height: 240px;
+    display: grid;
+    grid-template-rows: 40px 40px 120px 40px;
+    margin-top:auto;
+    margin-bottom: auto;
+    margin-left: auto;
+    margin-right: auto;
+    background: grey;
+    border: 5px solid grey;
+    border-radius: 12px 12px 12px 12px;
+}
+
+.uno{
+    background: white;
+    border: 0.5px solid grey;
+}
+
+.dos {
+    display: grid;
+    grid-template-columns: 150px 150px;
+}
+
+.tres {
+    display: grid;
+    grid-template-rows: 40px 40px 40px;
+    grid-template-columns: 75px 75px 75px 75px;
+}
+
+.cuatro {
+    display: grid;
+    grid-template-columns: 225px 75px;
+}
+
+* {
+    font-size: 30px;
+    text-align: center;
+}
+
+.num {
+    background: hotpink;
+    border: solid 0.5px grey;
+}
+
+.op {
+    background: deepskyblue;
+    border: solid 0.5px grey;
+}
+
+.sig {
+    background: limegreen;
+    border: solid 0.5px grey;
+}
+
+body { 
+    height: 100%;
+}
