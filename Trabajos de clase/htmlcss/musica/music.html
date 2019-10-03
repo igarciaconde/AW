@@ -1,169 +1,180 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>My music</title>
-        <link rel="stylesheet" href="css/music.css">
-        <link href="https://fonts.googleapis.com/css?family=Work+Sans&display=swap" rel="stylesheet">
-    </head>
-    <body>
-        <div class="container">
-            <header>
-                <h1>fdi playlist <span><img src="images/music-player.png" alt=""></span></h1>
-            </header>
-            <main>
-                <div class="introduction">¡aquí tienes la playlist de este més!</div>
-                <div class="content">
-                    <div class="item">
-                        <div class="pos">1</div>
-                        <div class="image">
-                            <img src="images/010002739487.jpg">
-                        </div>
-                        <div class="song">
-                            <div class="name">Yo x tí tú x mí <br> <span class="author">Rosalia ft Ozuna</span></div>
-                            <div class="audio">
-                                <audio src="audio/rosalia-ozuna-yo-x-ti-tu-x-mi-official-video.mp3" controls></audio>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div class="pos">2</div>
-                        <div class="image">
-                            <img src="images/2.jpg">
-                        </div>
-                        <div class="song">
-                            <div class="name">Someone you loved <br> <span class="author">Lewis Capaldi</span></div>
-                            <div class="audio">
-                                <audio src="audio/lewis-capaldi-someone-you-loved.mp3" controls></audio>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div class="pos">3</div>
-                        <div class="image">
-                            <img src="images/3.jpg">
-                        </div>
-                        <div class="song">
-                            <div class="name">Señorita <br> <span class="author">Shaw Mendes</span></div>
-                            <div class="audio">
-                                    <audio src="audio/shawn-mendes-camila-cabello-senorita.mp3" controls></audio>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div class="pos">4</div>
-                        <div class="image">
-                            <img src="images/4.jpg">
-                        </div>
-                        <div class="song">
-                            <div class="name">Sucker <br> <span class="author">Jonas Brothers</span></div>
-                            <div class="audio">
-                                    <audio src="audio/jonas-brothers-sucker.mp3" controls></audio>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div class="pos">5</div>
-                        <div class="image">
-                            <img src="images/5.jpg">
-                        </div>
-                        <div class="song">
-                            <div class="name">Don't call me up <br> <span class="author">Mabel</span></div>
-                            <div class="audio">
-                                    <audio src="audio/mabel-dont-call-me-up.mp3" controls></audio>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div class="pos">6</div>
-                        <div class="image">
-                            <img src="images/6.jpg">
-                        </div>
-                        <div class="song">
-                            <div class="name">So am I <br> <span class="author">Ava Max</span></div>
-                            <div class="audio">
-                                    <audio src="audio/ava-max-so-am-i-official-music-video.mp3" controls></audio>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div class="pos">7</div>
-                        <div class="image">
-                                <img src="images/7.jpg">
-                        </div>
-                        <div class="song">
-                            <div class="name">Que bonito es querer <br> <span class="author">Manuel Carrasco</span></div>
-                            <div class="audio">
-                                    <audio src="audio/manuel-carrasco-que-bonito-es-querer.mp3" controls></audio>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div class="pos">8</div>
-                        <div class="image">
-                            <img src="images/8.jpg">
-                        </div>
-                        <div class="song">
-                            <div class="name">Bad guy <br> <span class="author">Billie Eilish ft Justin Biever</span></div>
-                            <div class="audio">
-                                    <audio src="audio/billie-eilish-bad-guy-with-justin-bieber-official-music-video.mp3" controls></audio>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div class="pos">9</div>
-                        <div class="image">
-                            <img src="images/9.jpg">
-                        </div>
-                        <div class="song">
-                            <div class="name">Vuela(Beach pop) <br> <span class="author">Bombai</span></div>
-                            <div class="audio">
-                                    <audio src="audio/bombai-vuela-videoclip-oficial.mp3" controls></audio>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div class="pos" id="two">10</div>
-                        <div class="image">
-                            <img src="images/10.jpg">
-                        </div>
-                        <div class="song">
-                            <div class="name">Contando lunares <br> <span class="author">Dón Patricio</span></div>
-                            <div class="audio">
-                                    <audio src="audio/don-patricio-cruz-cafune-contando-lunares.mp3 " controls></audio>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </main>
-            <footer>
-                <h2>¡Vota tu canción favorita!</h2>
-                <div class="formu">
-                    <div class="nameF">
-                        Nombre: <input type="text" name="name" id="usrname">
-                    </div>
-                    <div class="mail">
-                        E-mail: <input type="email" name="e-mail" id="mail">
+
+<head>
+    <title>My music</title>
+    <link rel="stylesheet" href="css/music.css">
+    <link href="https://fonts.googleapis.com/css?family=Work+Sans&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1>fdi playlist <span><img src="images/music-player.png" alt=""></span></h1>
+            <a href="#"> Novedades </a>
+            <a href="#"> Listas </a>
+            <a href="#"> Blog </a>
+            <a href="#"> Iniciar Sesion </a>
+            <a href="#"> Registrarse </a>
+        </header>
+        <main>
+            <div class="introduction">
+                ¡aquí tienes la playlist de este més!
+            </div>
+            <div class="content">
+                <div class="item">
+                    <div class="pos">1</div>
+                    <div class="image">
+                        <img src="images/010002739487.jpg">
                     </div>
                     <div class="song">
-                        <select name="opt" class="opt">
-                            <option value="ros">Yo por tí tú por mí</option>
-                            <option value="bal">Someone you loved</option>
-                            <option value="nat">Señorita</option>
-                            <option value="ten">Sucker</option>
-                            <option value="pad">Don't call me up</option>
-                            <option value="ros">So am I</option>
-                            <option value="bal">Que bonito es querer</option>
-                            <option value="nat">Bad guy</option>
-                            <option value="ten">Vuela(Beach pop)</option>
-                            <option value="pad">Contando estrellas</option>
-                            </select>
-                    </div>
-                    <div class="button">
-                        <button type="reset">Enviar</button>
+                        <div class="name">Yo x tí tú x mí <br> <span class="author">Rosalia ft Ozuna</span></div>
+                        <div class="audio">
+                            <audio src="audio/rosalia-ozuna-yo-x-ti-tu-x-mi-official-video.mp3" controls></audio>
+                        </div>
                     </div>
                 </div>
-            </footer>
-        </div>
-       
-    </body>
+                <div class="item">
+                    <div class="pos">2</div>
+                    <div class="image">
+                        <img src="images/2.jpg">
+                    </div>
+                    <div class="song">
+                        <div class="name">Someone you loved <br> <span class="author">Lewis Capaldi</span></div>
+                        <div class="audio">
+                            <audio src="audio/lewis-capaldi-someone-you-loved.mp3" controls></audio>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="pos">3</div>
+                    <div class="image">
+                        <img src="images/3.jpg">
+                    </div>
+                    <div class="song">
+                        <div class="name">Señorita <br> <span class="author">Shaw Mendes</span></div>
+                        <div class="audio">
+                            <audio src="audio/shawn-mendes-camila-cabello-senorita.mp3" controls></audio>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="pos">4</div>
+                    <div class="image">
+                        <img src="images/4.jpg">
+                    </div>
+                    <div class="song">
+                        <div class="name">Sucker <br> <span class="author">Jonas Brothers</span></div>
+                        <div class="audio">
+                            <audio src="audio/jonas-brothers-sucker.mp3" controls></audio>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="pos">5</div>
+                    <div class="image">
+                        <img src="images/5.jpg">
+                    </div>
+                    <div class="song">
+                        <div class="name">Don't call me up <br> <span class="author">Mabel</span></div>
+                        <div class="audio">
+                            <audio src="audio/mabel-dont-call-me-up.mp3" controls></audio>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="pos">6</div>
+                    <div class="image">
+                        <img src="images/6.jpg">
+                    </div>
+                    <div class="song">
+                        <div class="name">So am I <br> <span class="author">Ava Max</span></div>
+                        <div class="audio">
+                            <audio src="audio/ava-max-so-am-i-official-music-video.mp3" controls></audio>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="pos">7</div>
+                    <div class="image">
+                        <img src="images/7.jpg">
+                    </div>
+                    <div class="song">
+                        <div class="name">Que bonito es querer <br> <span class="author">Manuel Carrasco</span></div>
+                        <div class="audio">
+                            <audio src="audio/manuel-carrasco-que-bonito-es-querer.mp3" controls></audio>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="pos">8</div>
+                    <div class="image">
+                        <img src="images/8.jpg">
+                    </div>
+                    <div class="song">
+                        <div class="name">Bad guy <br> <span class="author">Billie Eilish ft Justin Biever</span></div>
+                        <div class="audio">
+                            <audio src="audio/billie-eilish-bad-guy-with-justin-bieber-official-music-video.mp3"
+                                controls></audio>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="pos">9</div>
+                    <div class="image">
+                        <img src="images/9.jpg">
+                    </div>
+                    <div class="song">
+                        <div class="name">Vuela(Beach pop) <br> <span class="author">Bombai</span></div>
+                        <div class="audio">
+                            <audio src="audio/bombai-vuela-videoclip-oficial.mp3" controls></audio>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="pos" id="two">10</div>
+                    <div class="image">
+                        <img src="images/10.jpg">
+                    </div>
+                    <div class="song">
+                        <div class="name">Contando lunares <br> <span class="author">Dón Patricio</span></div>
+                        <div class="audio">
+                            <audio src="audio/don-patricio-cruz-cafune-contando-lunares.mp3 " controls></audio>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer>
+            <h2>¡Vota tu canción favorita!</h2>
+            <div class="formu">
+                <div class="nameF">
+                    Nombre: <input type="text" name="name" id="usrname">
+                </div>
+                <div class="mail">
+                    E-mail: <input type="email" name="e-mail" id="mail">
+                </div>
+                <div class="song">
+                    <select name="opt" class="opt">
+                        <option value="ros">Yo por tí tú por mí</option>
+                        <option value="bal">Someone you loved</option>
+                        <option value="nat">Señorita</option>
+                        <option value="ten">Sucker</option>
+                        <option value="pad">Don't call me up</option>
+                        <option value="ros">So am I</option>
+                        <option value="bal">Que bonito es querer</option>
+                        <option value="nat">Bad guy</option>
+                        <option value="ten">Vuela(Beach pop)</option>
+                        <option value="pad">Contando estrellas</option>
+                    </select>
+                </div>
+                <div class="button">
+                    <button type="reset">Enviar</button>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+</body>
+
 </html>
