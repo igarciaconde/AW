@@ -1,3 +1,5 @@
+*{font-family: 'Roboto', sans-serif;}
+
 header {
   position: fixed;
   top: 0%;
@@ -6,7 +8,7 @@ header {
   height: auto;
   padding-bottom: 0%;
   margin-bottom: 0%;
-  z-index: 100;
+  z-index: 1000;
   background-color: #3D9970 ;
   margin: 0%;
   letter-spacing: 0.1em;
@@ -15,9 +17,11 @@ header {
   align-items: center;
 }
 
-h1 {
+
+
+#encabezado {
   padding-left: 1em;
-  flex-basis: 90%;
+  flex-basis: 70%;
   margin: 0%;
   color: #fff;
   font-size: 60px;
@@ -30,20 +34,19 @@ h1 {
     0 20px 20px rgba(0, 0, 0, 0.15);
 }
 
-#signo {
+#perfil{
   flex-basis: 5%;
-  height: 100px;
-  width: 100px;
+  height: 70px;
 }
 
 #user {
-  flex-basis: 5%;
+  flex-basis: 20%;
   color: white;
   text-align: center;
-  padding: 10px;
+  padding: 20px;
 }
 
-a {
+#correo {
   text-decoration: none;
   color: white;
 }
@@ -54,6 +57,10 @@ main {
   margin-left: auto;
 }
 
+body{
+  background-image: url(https://www.workstreams.ai/assets/img/ws_task_management-big.jpg);
+}
+
 button {
   width: 50%;
   height: 40%;
@@ -61,12 +68,19 @@ button {
   margin: auto;
 }
 
-.container {
-  width: 100%;
+#addText{
+  margin-left: 20px;
+ 
 }
 
+#addButton{
+  padding-left: 20px;
+  
+}
+
+
 .content {
-  width: 100%;
+  padding-top: 150px; 
   display: flex;
   flex-direction: column;
 }
@@ -81,6 +95,8 @@ button {
   flex-shrink: 1;
   display: flex;
   flex-direction: row;
+  background-color: rgb(149, 178, 221) ;
+  opacity: 0.9;
 }
 
 .title {
@@ -111,6 +127,11 @@ button {
   flex-basis: 30%;
   flex-grow: 1;
   flex-shrink: 1;
+}
+
+#addTask{
+  display: flex;
+  flex-direction: row;
 }
 
 #done {

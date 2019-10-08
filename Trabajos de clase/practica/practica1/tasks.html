@@ -7,20 +7,23 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="shortcut icon" href="icon.png">
     <title>Gestor de Tareas</title>
-    <link rel="stylesheet" href="css/p1.css" media="screen">
-    <link rel="stylesheet" href="css/p1Print.css" type="print">
+    <link rel="stylesheet" href="css/tasksScreen.css" media="screen">
+    <link rel="stylesheet" href="css/tasksPrint.css" type="print">
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
     <title>Document</title>
 </head>
 
 <body>
     <div class="container">
         <header>
-            <h1>TASKS</h1>
+            <h1 id="encabezado">TASKS</h1>
+            <img id="perfil" src="profile.png">
 
             <div id="user">
-                <a href="#">USUARIO@GMAIL.COM</a>
+                <br><a id="correo" href="#">USUARIO@GMAIL.COM</a>
                 <p id="estado">DESCONECTAR</p>
             </div>
+
         </header>
         <main>
             <div class="content">
@@ -55,11 +58,26 @@
                     <div class="button">Marcar finalizada</div>
                 </div>
 
-                <div class="creator"></div>
-                <div class="cleaner"></div>
+                <div class="item">
+                    <div class="title">Guía practica 2</div>
+                    <div class="tags">
+                        <div class="tag"></div>
+                    </div>
+                    <div class="button">Marcar finalizada</div>
+                </div>
+
+                <form action="#" id="addTask">
+                    <div id=addText><input type="text" size="52" name="firstname"><br></div>
+                    <div id="addButton"><input type="button" value="Añadir"></div>
+                </form>
+
             </div>
-        </main>
-        <footer></footer>
+
+            <div class="creator"></div>
+            <div class="cleaner"></div>
+    </div>
+    </main>
+    <footer></footer>
     </div>
 </body>
 
