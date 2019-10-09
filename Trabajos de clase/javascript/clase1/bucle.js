@@ -29,17 +29,14 @@ function printObj(x){
     }
 }
 
-function createObj(x){
-    let o ={};
+function createObj(x,p){
     for(var i=0; i < x.lenght ;i++){
-        Object.defineProperties(o, x[i],{
-            value : "",
-            writable : true,
-            enumerable : true,
-            configurable : true
+        Object.definePropertie(p, "jesus",{
+            value : "aa"
         })
     }
-    printObj(o)
+    console.log(p)
+    printObj(p)
 }
 
 var x = 8
@@ -58,4 +55,4 @@ typeO(x)
 typeO(z)
 typeObj(hola)
 printObj(hola)
-createObj(obj)
+createObj(obj,hola)
