@@ -1,4 +1,6 @@
-*{font-family: 'Roboto', sans-serif;}
+* {
+  font-family: "Roboto", sans-serif;
+}
 
 header {
   position: fixed;
@@ -9,15 +11,13 @@ header {
   padding-bottom: 0%;
   margin-bottom: 0%;
   z-index: 1000;
-  background-color: #3D9970 ;
+  background-color: #3d9970;
   margin: 0%;
   letter-spacing: 0.1em;
   display: flex;
   flex-direction: row;
   align-items: center;
 }
-
-
 
 #encabezado {
   padding-left: 1em;
@@ -34,7 +34,7 @@ header {
     0 20px 20px rgba(0, 0, 0, 0.15);
 }
 
-#perfil{
+#perfil {
   flex-basis: 5%;
   height: 70px;
 }
@@ -57,60 +57,43 @@ main {
   margin-left: auto;
 }
 
+body {
+  background-image: url(https://www.workstreams.ai/assets/img/ws_task_management-big.jpg);
+}
+
 footer {
   width: 60%;
   margin-right: auto;
   margin-left: auto;
 }
 
-body{
-  background-image: url(https://www.workstreams.ai/assets/img/ws_task_management-big.jpg);
-}
-
-button {
-  width: 50%;
-  height: 40%;
-  display: block;
-  margin: auto;
-}
-
-#addText{
-  margin-left: 20px;
- 
-}
-
-#addButton{
-  padding-left: 20px;
-  
-}
-
-
 .content {
-  padding-top: 150px; 
+  padding-top: 150px;
   display: flex;
   flex-direction: column;
 }
 
 .item {
-  width: 100%;
   height: 5em;
   margin: 1em;
-  border: 0.1em solid black;
   border-radius: 12px 12px 12px;
   flex-grow: 1;
   flex-shrink: 1;
   display: flex;
   flex-direction: row;
-  background-color: rgb(149, 178, 221) ;
-  opacity: 0.9;
+  background-color: rgb(149, 178, 221);
+  border: 0.1em solid lightgray;
 }
 
 .title {
-  flex-basis: 40%;
+  flex-basis: 20%;
   flex-grow: 1;
   flex-shrink: 1;
   margin: auto;
   padding-left: 1em;
+  font-size: 20px;
+  color: rgb(51, 51, 138);
+  font-weight: bold;
 }
 
 .tags {
@@ -125,62 +108,94 @@ button {
 .tag {
   flex-grow: 1;
   flex-shrink: 1;
-  margin: auto;
+  margin-left: 10px;
+  padding: 10px;
+  border: rgb(51, 51, 138) 1px solid;
+  border-radius: 12px;
+  background-color: rgb(102, 102, 226);
+  text-align: center;
+  font-weight: bold;
 }
 
-.button {
+.boton {
   display: flex;
   flex-basis: 30%;
   flex-grow: 1;
   flex-shrink: 1;
   flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
+  height: 50px;
+  margin-top: 15px;
+  text-align: center;
+  margin-bottom: 20px;
 }
 
-.addTask{
+button {
+  width: 50%;
+  height: 40%;
+  margin: auto;
+  height: 5px;
+  flex-grow: 1;
+  flex-shrink: 1;
+  border-radius: 10px;
+  font-weight: bold;
+}
+
+.addTask {
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: space-around;
-  width: 100%;
-  height: 4em;
+  justify-content: flex-start;
+  padding-left: 1em;
+  height: 7em;
   margin: 1em;
-  border: 0.1em solid black;
+  border: 0.1em solid lightgray;
   border-radius: 12px 12px 12px;
   flex-grow: 1;
   flex-shrink: 1;
-  background: yellow;
-  opacity: 0.9;
+  background: rgb(247, 215, 110);
 }
 
 .clean {
   display: flex;
   flex-direction: row;
-  align-items: center;
-  justify-content: space-around;
-  margin: auto;
-  width: 100%;
-  height: 4em;
-  margin: 1em;
-  border: 0.1em solid black;
+  text-align: center;
+  justify-content: center;
+  border: 0.1em solid lightgray;
   border-radius: 12px 12px 12px;
   flex-grow: 1;
   flex-shrink: 1;
   background: lightsalmon;
-  opacity: 0.9;
+  height: 5em;
+  width: 50%;
+  font-size: 20px;
+  font-weight: bold;
 }
 
-#addText {
-  height: 3em;
+textarea {
+  flex-basis: 70%;
+  height: 60%;
+  border-radius: 10px;
+  border: 0.1em solid lightgray;
+  margin: 0%;
 }
 
-#addButton {
-  height: 2em;
+.anadir {
+  flex-basis: 10%;
+  margin-left: 2%;
+}
+
+.addBoton {
+  height: 5em;
+  width: 200px;
+  border-radius: 10px;
+  font-size: 15px;
+  font-weight: bold;
 }
 
 #done {
   text-decoration: line-through;
+  opacity: 0.6;
+  border: 2px solid black;
 }
 
 #done > .tag {
