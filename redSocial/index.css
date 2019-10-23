@@ -100,7 +100,7 @@ a[href$="index.html"]::before {
     height: 400px;
     background: coral;
     padding-left: 2em;
-    width: 70%;
+    width: 75%;
     margin: auto;
     padding-right: 2em;
     border-radius: 12px 12px 12px 12px;
