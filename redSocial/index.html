@@ -6,13 +6,14 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="index.css">
     <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:300,400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Exo&display=swap" rel="stylesheet">
     <title>Document</title>
 </head>
 <body>
-    <div class="container">
-        <header class="head">
+    <div class="flex_col">
+        <header class="flex_row" id="head">
             <div class="title">
-                <h1>MeetAsk</h1>
+                <h1><a href="index.html">MeetAsk</a></h1>
             </div>
             <div class="navbar">
                 <div class="navelem">
@@ -23,37 +24,33 @@
                 </div>
             </div>
         </header>
-        <main class="content">
-            <div class="maintitle">
+        <main class="flex_col">
+            <div class="content_title">
                 <h3>Entrar</h3>
             </div>
-            <div class="login">
-                <form action="" method="POST" class="form">
-                    <div class="mail">
-                        <div class="form_title">
-                            Email
-                        </div>
-                        <div class="form_input">
-                            <input type="text" name="email">
-                        </div> 
+            <form action="" method="POST" class="flex_col" id="form">
+                <div class="flex_row" class= "flex_bah" id="mail">
+                    <div class="mail_title">
+                        Email
                     </div>
-                    <div class="pass">
-                        <div class="form_title">
-                            Contraseña
-                        </div>
-                        <div class="form_input">
-                            <div class="input_pass">
-                                <input type="password" name="password">
-                            </div>
-                            <div class="showpass">
-                                <input type="checkbox" name="showpassword">
-                                Mostrar constraseña
-                            </div>
-                        </div>
+                    <div class="mail_input">
+                        <input type="text" name="email">
                     </div> 
-                    <div class="butt"><button type="submit">Enviar</button></div>
-                </form>
-            </div>
+                </div>
+                <div class="flex_row" id="pass">
+                    <div class="pass_title">
+                        Contraseña
+                    </div>
+                    <div class="pass_input">
+                        <input type="password" name="password">
+                    </div>
+                    <div class="pass_check">
+                        <input type="checkbox" name="showpassword">
+                        Mostrar constraseña
+                    </div>
+                </div> 
+                <div class="butt"><button type="submit">Conectar</button></div>
+            </form>
         </main>
     </div>
 </body>
