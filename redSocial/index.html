@@ -14,18 +14,40 @@
 
 
 <body>
-    <div class="navbar flex_row">
-        <div class="navbar_title">
-            <h1>MeetAsk</h1>
-        </div>
-        <div class="navbar_items flex_row flex_start">
-            <div class="navelem ">
-                <a href="" class="navs">Entrar</a>
+
+    <div class="container flex_col">
+
+        <div class="navbar flex_row flex_10_90">
+            <div class="navbar_title_log">
+                <header><h1 class="page_title">MeetAsk</h1></header> 
             </div>
-            <div class="navelem ">
-                <a href="" class="navs">Nuevo usuario</a>
+            <div class="navbar_items_log flex_row flex_start flex_wrapped">
+                <div class="navelem">
+                    <a href="#" class="navs">Iniciar sesión</a>
+                </div>
+                <div class="navelem">
+                    <a href="singup.html" class="navs">Registro</a>
+                </div>
             </div>
         </div>
+
+        <div class="content flex_col flex_90_10">
+            <header class="content_title padded_1 font_20"><h2>Iniciar sesión</h2></header>
+            <form action="login" method="POST" class="form flex_colum centered_x_50 rounded font_30 transparent">
+                <div class="form_elem flex_row flex_beh flex_center flex_wrapped">
+                    <div class="form_title_si">Email</div>
+                    <div class="form_input_si"><input type="text" name="email" class="font_30 centered_x_95"></div>
+                </div>
+                <div class="form_elem flex_row flex_beh flex_center flex_wrapped">
+                    <div class="form_title_si">Contraseña</div>
+                    <div class="form_input_si"><input type="password" name="password" class="font_30 centered_x_95"></div>
+                </div>
+                <div class="form_elem flex_row flex_beh flex_center">
+                    <button class="button rounded font_20 transition">Conectarse</button>
+                </div>
+            </form>
+        </div>
+
     </div>
     
 </body>

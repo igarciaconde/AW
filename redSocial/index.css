@@ -1,7 +1,30 @@
+html {
+    height: 100%;
+}
+
 body {
     padding: 0;
     margin: 0;
+    height: 100%;
     background: url(media/myanmar.jpg);
+}
+
+.container {
+    height: 100%;
+}
+
+* {
+    font-family: 'Josefin Sans', sans-serif;
+    /*border: 1px yellow solid;*/   
+}
+
+.page_title {
+    font-family: 'Exo', sans-serif;
+    margin-left: 1em;
+}
+
+.page_title::before {
+    content: url(media/icon32.png);
 }
 
 
@@ -20,13 +43,149 @@ body {
     flex-shrink: 1;
 }
 
+.flex_90_10 {
+    flex-basis: 90%;
+    flex-grow: 9;
+    flex-shrink: 1;
+}
+
+.flex_10_90{
+    flex-basis: 10%;
+    flex-grow: 1;
+    flex-shrink: 9;
+}
+
+.flex_70_30 {
+    flex-basis: 70%;
+    flex-grow: 7;
+    flex-shrink: 3;
+}
+
+.flex_30_70 {
+    flex-basis: 30%;
+    flex-grow: 3;
+    flex-shrink: 7;
+}
+
+.flex_60_40 {
+    flex-basis: 60%;
+    flex-grow: 6;
+    flex-shrink: 4;
+}
+
+.flex_40_60 {
+    flex-basis: 40%;
+    flex-grow: 4;
+    flex-shrink: 6;
+}
+
+.flex_4 {
+    flex-basis: 25%;
+    flex-grow: 2,5;
+    flex-shrink: 2,5;
+}
+
+.flex_3 {
+    flex-basis: 33%;
+    flex-grow: 3;
+    flex-shrink: 3;
+}
+
+.flex_2 {
+    flex-basis: 30%;
+    flex-grow: 3;
+    flex-shrink: 3;
+}
+
 .flex_start {
     justify-content: flex-start;
+}
+
+.flex_end {
+    justify-content: flex-end;
+}
+
+.flex_wrapped {
     flex-wrap: wrap;
 }
 
+.flex_center {
+    justify-content: center;
+}
 
+.centered_x_95 {
+    width: 95%;
+    margin-right: auto;
+    margin-left: auto;
+}
 
+.centered_x_60 {
+    width: 60%;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.centered_x_50 {
+    width: 50%;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.centered_y_70 {
+    height: 70%;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.rounded {
+    border-radius: 12px 12px 12px 12px;
+}
+
+.padded_1 {
+    padding: 1em;
+}
+
+.padded_3 {
+    padding: 3em;
+}
+
+.margin_1 {
+    margin:1em;
+}
+
+.font_40 {
+    font-size: 40px;
+}
+
+.font_30 {
+    font-size: 30px;
+}
+
+.font_20 {
+    font-size: 20px;
+}
+
+.font_15 {
+    font-size: 15px;
+}
+
+.transition {
+    transition-duration: .1s;
+    transition-timing-function: linear;
+}
+
+.transparent {
+    opacity: 0.8;
+}
+
+.visible_background {
+    background: rgba(255,255,255,.5);
+}
+
+.italic {
+    font-style: italic;
+    font-weight: bold;
+}
 
 /*navbar*/
 
@@ -34,11 +193,19 @@ body {
     background: coral;
 }
 
-.navbar_title {
+.navbar_title_log {
+    flex-basis: 80%;
+}
+
+.navbar_items_log {
+    flex-basis: 20%;
+}
+
+.navbar_title_loged {
     flex-basis: 60%;
 }
 
-.navbar_items {
+.navbar_items_loged {
     flex-basis: 40%;
 }
 
@@ -53,3 +220,84 @@ body {
     color: white;
     font-size: 1.5em;
 }
+
+.pts {
+    margin: 1em;
+    text-decoration: none;
+    color: black;
+    font-size: 1.3em;
+}
+
+.pts::before {
+    content: url(media/chica16.png);
+}
+
+/*content*/
+
+.content header {
+    text-align: center;
+}
+
+.form {
+    background: coral;
+}
+
+
+.form_elem {
+    margin: 2em
+}
+
+.form_title_si {
+    flex-basis: 20%;
+    flex-grow: 2;
+    flex-shrink: 8;
+}
+
+.form_input_si {
+    flex-basis: 80%;
+    flex-grow: 8;
+    flex-shrink: 2;
+}
+
+.form_title_su {
+    flex-basis: 30%;
+    flex-grow: 3;
+    flex-shrink: 7;
+}
+
+.form_input_su {
+    flex-basis: 70%;
+    flex-grow: 7;
+    flex-shrink: 3;
+}
+
+.profpic::before {
+    content: url("media/chica64.png");
+}
+
+.button {
+    width: 30%;
+    height: 30px;
+    background-color: #FFD367;
+}
+
+.button_re {
+    width: 50%;
+    height: 40px;
+    background-color: #FFD367;
+}
+
+#btt {
+    width: 100%;
+}
+
+button:hover {
+    color: black;
+    background-color: #1883ba;
+}
+
+.button_re:hover {
+    color: black;
+    background-color: #1883ba;
+}
+

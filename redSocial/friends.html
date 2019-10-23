@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="index.css">
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:300,400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Exo&display=swap" rel="stylesheet">
+    <title>MeetAsk</title>
+</head>
+
+
+<body>
+
+    <div class="container flex_col">
+
+        <div class="navbar flex_row flex_10_90">
+            <div class="navbar_title_loged">
+                <header><h1 class="page_title">MeetAsk</h1></header> 
+            </div>
+            <div class="navbar_items_loged flex_row flex_start flex_wrapped">
+               <div class="navelem">
+                    <a href="profile.html" class="navs">Perfil</a>
+                </div>
+                <div class="navelem">
+                    <a href="#" class="navs">Amigos</a>
+                </div>
+                <div class="navelem">
+                    <a href="#" class="navs">Preguntas</a>
+                </div>
+                <div class="navelem">
+                    <a href="#" class="navs">Desconectar</a>
+                </div>
+                <div class="navelem">
+                    <p class="pts">50pts</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="content flex_col flex_90_10 visible_background">
+            <header class="content_title padded_3 font_20"><h2>Solicitudes de amistad</h2></header>
+            <div class="flex_col centered_x_60 font_40">
+                <div class="flex_col">
+                    <div class=" flex_row flex_wrapped flex_2 padded_1">
+                        <div class="flex_row flex_40_60">
+                            <div><img src="media/icon32.png" alt=""></div>
+                            <div>Bruno</div>
+                        </div>
+                        <div class="flex_60_40">
+                            <div class="flex_row flex_2 flex_center">
+                                <button class="button_re rounded font_20 transition">Aceptar</button>
+                                <button class="button_re rounded font_20 transition">Rechazar</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class=" flex_row flex_wrapped flex_2 padded_1">
+                        <div class="flex_row flex_40_60">
+                            <div><img src="media/chica64.png" alt=""></div>
+                            <div>Bruno</div>
+                        </div>
+                        <div class="flex_60_40">
+                            <div class="flex_row flex_2 flex_center">
+                                <button class="button_re rounded font_20 transition">Aceptar</button>
+                                <button class="button_re rounded font_20 transition">Rechazar</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <header class="content_title padded_1 font_20"><h2>Buscar amigos</h2></header>
+            <div class="flex_row font_30 centered_x_60 padded_3">
+                <div class="flex_30_70 flex_row flex_start">Busqueda de amigos</div>
+                <div class="flex_row flex_70_30">
+                    <div class="flex_70_30">
+                        <input type="search" name="friendsearch" class="font_30 rounded centered_x_95">
+                    </div>
+                    <div class="flex_30_70">
+                        <button class="button_re rounded font_20 transition centered_x_95" id="btt">Buscar</button>
+                    </div>
+                </div>
+            </div>
+
+            <header class="content_title padded_1 font_20"><h2>Mis Amigos</h2></header>
+            <div class="centered_x_60 font_40 padded_1">
+                <ul style="margin: 0;">
+                    <li class="flex_row">
+                        <div class="profpic">Mike wasouski</div>
+                    </li>
+                    <li class="flex_row">
+                        <div class="profpic">Mike wasouski</div>
+                    </li>
+                </ul>
+            </div>
+            
+        </div>
+
+    </div>
+    
+</body>
+
+
+</html>
