@@ -1,0 +1,151 @@
+* {
+    font-family: 'Josefin Sans', sans-serif;
+    /*border: 1px yellow solid;*/
+    
+}
+
+html { 
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    height: 100%;
+    background-image: url("../media/myanmar.jpg");
+}
+
+/* propiedades generales */
+
+.flex_row {
+    display: flex;
+    flex-direction: row;
+}
+
+.flex_col {
+    display: flex;
+    flex-direction: column;
+}
+
+.centered {
+   width: 65%;
+   margin: auto;
+}
+
+.flex_beh {
+    flex-grow: 1;
+    flex-shrink: 1;
+}
+
+
+/*structure*/
+
+.container {
+    height: 100%;
+}
+
+.flex_col header {
+    background: coral;
+}
+
+.flex_col main {
+    flex-basis: 80%;
+    width: 100%;
+    margin: auto;
+    background: rgba(255,255,255,.5);
+}
+
+#head.flex_row {
+    justify-content: space-between;
+}
+
+.title {
+    flex-basis: 50%;
+}
+
+.navbar {
+    flex-basis: 50%;
+    display: flex;
+    flex-direction: row;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.navelem > a {
+    margin: 1em;
+    text-decoration: none;
+    color: white;
+    font-size: 1.5em;
+}
+
+h1 > a {
+    text-align: center;
+    font-size: 1em;
+    font-family: 'Exo', sans-serif;
+    color: black;
+    text-decoration: none;
+    margin-left: 1em;
+}
+
+a[href$="index.html"]::before {
+    content: url(../media/icon32.png);
+}
+
+a[href$="pts"]::before {
+    content: url(../media/chica16.png);
+}
+
+a[href$="pts"]:hover {
+    pointer-events: none;
+}
+
+
+.content_title > h3 {
+    text-align: center;
+    padding: 1em;
+    font-size: 2em;
+}
+
+#content.flex_row {
+    justify-content: space-around;
+    margin: 30px;
+    margin-bottom: 50px;
+    font-size: 25px;
+}
+
+#img.flex_row {
+    flex-basis: 40%;
+}
+
+#img.flex_row {
+    flex-basis: 60%;
+}
+
+.butt {
+    width: 40%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.butt > button{
+    margin: auto;
+    text-decoration: none;
+    width: 100%;
+    padding: 10px;
+    font-weight: 600;
+    font-size: 20px;
+    color: black;
+    background-color: #FFD367;
+    border-radius: 6px;
+    transition-duration: .1s;
+    transition-timing-function: linear;
+}
+
+.butt > button:hover {
+    color: black;
+    background-color: #1883ba;
+}
+
+
+
+
+
