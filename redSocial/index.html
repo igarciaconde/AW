@@ -1,5 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
+
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,49 +11,24 @@
     <link href="https://fonts.googleapis.com/css?family=Exo&display=swap" rel="stylesheet">
     <title>MeetAsk</title>
 </head>
+
+
 <body>
-    <div class="flex_col">
-        <header class="flex_row" id="head">
-            <div class="title">
-                <h1><a href="index.html">MeetAsk</a></h1>
+    <div class="navbar flex_row">
+        <div class="navbar_title">
+            <h1>MeetAsk</h1>
+        </div>
+        <div class="navbar_items flex_row flex_start">
+            <div class="navelem ">
+                <a href="" class="navs">Entrar</a>
             </div>
-            <div class="navbar">
-                <div class="navelem">
-                    <a href="">Entrar</a>
-                </div>
-                <div class="navelem">
-                    <a href="">Nuevo usuario</a>
-                </div>
+            <div class="navelem ">
+                <a href="" class="navs">Nuevo usuario</a>
             </div>
-        </header>
-        <main class="flex_col">
-            <div class="content_title">
-                <h3>Entrar</h3>
-            </div>
-            <form action="" method="POST" class="flex_col" id="form">
-                <div class="flex_row" class= "flex_bah" id="mail">
-                    <div class="mail_title">
-                        Email
-                    </div>
-                    <div class="mail_input">
-                        <input type="text" name="email">
-                    </div> 
-                </div>
-                <div class="flex_row" id="pass">
-                    <div class="pass_title">
-                        Contraseña
-                    </div>
-                    <div class="pass_input">
-                        <input type="password" name="password">
-                    </div>
-                    <div class="pass_check">
-                        <input type="checkbox" name="showpassword">
-                        Mostrar constraseña
-                    </div>
-                </div> 
-                <div class="butt"><button type="submit">Conectar</button></div>
-            </form>
-        </main>
+        </div>
     </div>
+    
 </body>
+
+
 </html>

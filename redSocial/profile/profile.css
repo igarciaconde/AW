@@ -45,6 +45,7 @@ body {
 
 .flex_col header {
     background: coral;
+    flex-basis: 20%;
 }
 
 .flex_col main {
