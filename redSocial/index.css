@@ -137,6 +137,10 @@ body {
     margin-bottom: auto;
 }
 
+.main_background {
+    background: coral;
+}
+
 .rounded {
     border-radius: 12px 12px 12px 12px;
 }
@@ -151,6 +155,11 @@ body {
 
 .margin_1 {
     margin:1em;
+}
+
+.margin_y_1{
+    margin-top: 0.5em;
+    margin-bottom:0.5em;
 }
 
 .font_40 {
