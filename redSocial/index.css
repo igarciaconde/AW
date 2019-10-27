@@ -6,7 +6,6 @@ body {
     padding: 0;
     margin: 0;
     height: 100%;
-    background: url(media/myanmar.jpg);
 }
 
 .container {
@@ -18,6 +17,18 @@ body {
     /*border: 1px yellow solid;*/   
 }
 
+.background_image {
+    background: url(media/myanmar.jpg);
+}
+
+.background_color {
+    background-color: rgb(255, 202, 124);
+}
+
+.background_color_image {
+    background-image: url(media/elementos-escuela.png);
+}
+
 .page_title {
     font-family: 'Exo', sans-serif;
     margin-left: 1em;
@@ -25,6 +36,11 @@ body {
 
 .page_title::before {
     content: url(media/icon32.png);
+}
+
+.question_link {
+    text-decoration: none;
+    color: black;
 }
 
 
@@ -97,6 +113,24 @@ body {
     flex-shrink: 3;
 }
 
+.flex_10_percent {
+    flex-basis: 10%;
+    flex-grow: 1;
+    flex-shrink: 9;
+}
+
+.flex_20_percent {
+    flex-basis: 20%;
+    flex-grow: 2;
+    flex-shrink: 8;
+}
+
+.flex_60_percent {
+    flex-basis: 60%;
+    flex-grow: 6;
+    flex-shrink: 4;
+}
+
 .flex_start {
     justify-content: flex-start;
 }
@@ -131,6 +165,20 @@ body {
     margin-left: auto;
 }
 
+.centered_x_30 {
+    width: 50%;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.left_x_50 {
+    width: 50%;
+}
+
+.left_x_20 {
+    width: 20%;
+}
+
 .centered_y_70 {
     height: 70%;
     margin-top: auto;
@@ -153,8 +201,16 @@ body {
     padding: 3em;
 }
 
+.paddin-top-1 {
+    padding-top: 1em;
+}
+
 .margin_1 {
     margin:1em;
+}
+
+.total_left {
+    margin-left:0
 }
 
 .margin_y_1{
@@ -194,6 +250,18 @@ body {
 .italic {
     font-style: italic;
     font-weight: bold;
+}
+
+.green {
+    color: green;
+}
+
+.red {
+    color: red;
+}
+
+.width_30{
+    width: 30;
 }
 
 /*navbar*/
