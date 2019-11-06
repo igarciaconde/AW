@@ -60,6 +60,13 @@ function cb_buscarUsuario(err, response) {
     }
 }
 
+function cb_terminarConexion(err){
+    if(err) {
+        console.log(err)
+    }
+    else { console.log("Pool de conexiones cerrado con exito") }
+}
+
 // LLamadas a los métodos de DAO para insertar usuarios, enviar mensajes, etc
 // ---------------------------------------------------------------------------------------
 daoMensajeria.insertarUsuario(usuario1,cb_insert);
@@ -67,4 +74,5 @@ daoMensajeria.insertarUsuario(usuario2,cb_insert);
 daoMensajeria.enviarMensaje(usuario1, usuario2, "Que pasa hermano", cb_enviarMensaje);
 daoMensajeria.bandejaEntrada(usuario2, cb_bandejaEntrada);
 daoMensajeria.buscarUsuario("car", cb_buscarUsuario);
+daoMensajeria.terminarConexion(cb_terminarConexion);
 

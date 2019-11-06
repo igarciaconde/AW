@@ -1,5 +1,5 @@
 
-const mysql = require("mysql");
+const mysql = require("mysql"); // require fuera
 
 class DAO {
 
@@ -16,10 +16,10 @@ class DAO {
 
         this.pool.getConnection(function (err, connection) {
             if (err) {
-                console.log(`Error al obtener la conexión: ${err.message}`);
-                callback(err);
+                callback(err); // new error("Error de conexion")
             }
             else {
+                 // Consulta parametrica value(?,?,?) con los parametros en un array
                 const sql = "INSERT INTO USUARIOS(Nombre, Correo, Telefono) "
                     + "VALUES ('" + usuario["nombre"] + "','" + usuario["correo"] + "','"
                     + usuario["telefono"] + "')";
@@ -31,7 +31,7 @@ class DAO {
                         callback(err)
                     } else {
                         // Identificador de la nueva fila
-                        usuario["id"] = resultado.insertId;
+                        usuario["id"] = resultado.insertId; // usar notacion punto(usuario.id)
                         callback(null)
                     }
                 });
@@ -43,10 +43,11 @@ class DAO {
 
         this.pool.getConnection(function (err, connection) {
             if (err) {
-                console.log(`Error al obtener la conexión: ${err.message}`);
                 callback(err);
             }
             else {
+
+                // Hacerla parametrica
                 const sql = "INSERT INTO MENSAJES(idOrigen, idDestino, mensaje, leido) "
                     + "VALUES ('" + usuarioOrigen["id"] + "','" + usuarioDestino["id"] + "','"
                     + mensaje + "','" + 0 + "')";
@@ -54,7 +55,6 @@ class DAO {
                 connection.query(sql, function (err, resultado) {
                     connection.release();
                     if (err) {
-                        console.log("Error de inserción: " + err);
                         callback(err)
                     } else {
                         // Imprime el identificador de la nueva fila
@@ -96,7 +96,7 @@ class DAO {
             if (err) {
                 callback("Error al conectarse a la base de datos")
             } else {
-                const sql = "SELECT * FROM USUARIOS WHERE nombre LIKE '%"+str+"%'"
+                const sql = "SELECT * FROM USUARIOS WHERE nombre LIKE '%" + str + "%'"
 
                 conncetion.query(sql, function (err, resultado) {
                     conncetion.release()
@@ -108,6 +108,17 @@ class DAO {
                 })
             }
         })
+    }
+
+    terminarConexion(callback) {
+
+        this.pool.end(function (err) {
+            if (err) {
+                callback("Error al cerrar la base de datos");
+            } else {
+                callback(null);
+            }
+        });
     }
 
 }
