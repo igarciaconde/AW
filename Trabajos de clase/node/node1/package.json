@@ -1,0 +1,16 @@
+{
+  "name": "clase1",
+  "version": "1.0.0",
+  "description": "for fisrt clas",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "aw",
+    "node"
+  ],
+  "author": "inigogar",
+  "license": "MIT",
+  "private": true
+}
