@@ -58,8 +58,25 @@ class DaoTask {
                     if(err){
                         callback(new Error("Error de acceso a la base de datos"))
                     }else{
-                        
-                        callback(null)
+                        let id = response.insertId
+                        let sql = "INSERT INTO tag(taskId, tag) VALUES "
+                        let tags = new Array
+                        task.tags.forEach(elem => {
+                            sql += "(?,?),"
+                            tags.push(id)
+                            tags.push(elem)
+                        })
+                        sql = sql.slice(0,-1);
+                        sql += ";"
+
+                        conection.query(sql, tags, function(err){
+                            if(err){
+                                callback(new Error("Error de acceso a la base de datos"))
+                            }
+                            else {
+                                callback(null)
+                            }
+                        })
                     }
                 })
             }
