@@ -101,5 +101,5 @@ let task = new Task("nueva tarea", false, ["AW","PEP"])
 
 //daoTask.getAllTask("inigogar@ucm.es", cb_getAllTasks)
 //daoTask.insertTask("inigogar@ucm.es",task, cb_insetTask)
-//daoTask.markTaskDone(7, cb_markTaskDone)
-//daoTask.deleteCompleted("inigogar@ucm.es", cb_completeDeleted)
+//daoTask.markTaskDone(9, cb_markTaskDone)
+//daoTask.deleteCompleted("inigogar@ucm.es", cb_deleteCompleted)

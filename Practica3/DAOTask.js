@@ -105,7 +105,7 @@ class DaoTask {
             if(err){
                 callback(new Error("Error de conexión a la base de datos"))
             }else{
-                let sql = "DELETE FROM task WHERE user = ?"
+                let sql = "DELETE FROM task WHERE user = ? and done = true"
                 conection.query(sql,email,function(err){
                     if(err){
                         callback(new Error("Error de acceso a la base de datos"))
