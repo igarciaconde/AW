@@ -3,7 +3,7 @@
 const mysql = require("mysql");
 const config = require("./config");
 const DAOUsers = require("./DAOUsers");
-const DAOTasks = require("./DAOTasks");
+const DAOTasks = require("./DAOTask");
 
 // Crear el pool de conexiones
 // ---------------------------------------------------------------------------------------
@@ -20,14 +20,6 @@ let daoTask = new DAOTasks(pool);
 
 //Definicion de clases
 // ---------------------------------------------------------------------------------------
-class Usuario {
-    
-    constructor(mail, password, img){
-        this.mail = mail;
-        this.password = password;
-        this.img = img
-    }
-}
 
 class Task {
     constructor(text, done, tags){
@@ -37,16 +29,11 @@ class Task {
     }
 }
 
-class Tag {
-    constructor(taskId, tag){
-        this.taskId = taskId;
-        this.tag = tag;
-    }
-}
 
 // Definición de las funciones callback
 // ---------------------------------------------------------------------------------------
 
+//Calbacks user
 function cb_isUserCorrect(err, result) {
     if (err) {
         console.log(err.message);
@@ -67,7 +54,7 @@ function cb_getUserImageName(err, result) {
     }
 }
 
-//Calback tasks
+//Calbacks task
 function cb_getAllTasks(err, response) {
     if(err){
         console.log(err)
@@ -77,11 +64,29 @@ function cb_getAllTasks(err, response) {
     process.exit(0)
 }
 
-function cb_insetTask(err, response){
+function cb_insetTask(err){
     if(err){
         console.log(err)
     }else{
-        console.log(response)
+        console.log("Insert task done")
+    }
+    process.exit(0)
+}
+
+function cb_markTaskDone(err){
+    if(err){
+        console.log(err)
+    }else{
+        console.log("Mark task done")
+    }
+    process.exit(0)
+}
+
+function cb_deleteCompleted(err){
+    if(err){
+        console.log(err)
+    }else{
+        console.log("Delete done")
     }
     process.exit(0)
 }
@@ -92,8 +97,9 @@ function cb_insetTask(err, response){
 //daoUser.getUserImageName("edu@gmail.com", cb_getUserImageName);
 
 
-let task = new Task("nueva tarea", 1, ["AW","PEP"])
+let task = new Task("nueva tarea", false, ["AW","PEP"])
 
 //daoTask.getAllTask("inigogar@ucm.es", cb_getAllTasks)
-daoTask.insertTask("inigogar@ucm.es",task, cb_insetTask)
-
+//daoTask.insertTask("inigogar@ucm.es",task, cb_insetTask)
+//daoTask.markTaskDone(7, cb_markTaskDone)
+//daoTask.deleteCompleted("inigogar@ucm.es", cb_completeDeleted)
