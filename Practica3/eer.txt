@@ -1,0 +1,26 @@
+let arr = new Array
+                        response.forEach(element => {
+                            let sql2 = "SELECT tag FROM tag WHERE taskId = ?;"
+                            let tags = new Array
+                            console.log(element.id)
+                            conection.query(sql2, element.id, function(err, response){
+                                if(err){
+                                    callback(err,null)
+                                }else{
+                                    console.log("eee")
+                                    console.log("oo" + response)
+                                    response.forEach(element => {
+                                        tags.push(element)
+                                        console.log(element)
+                                    })
+                                }
+                            })
+                            let res = {
+                                id: element.id,
+                                text: element.text,
+                                done: element.done,
+                                tag: tags
+                            }
+                            arr.push(res)
+                        });
+                        callback(null,arr)
