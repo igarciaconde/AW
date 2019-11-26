@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Respuestas</title>
+</head>
+<body>
+    <div class="container">
+        <table>
+            <caption>Resultados</caption>
+            <tr>
+                <th>Respuesta</th>
+                <th>Numero de votos</th>
+            </tr>
+            <% options.forEach(function(opt) { %>
+                <tr>
+                    <th><%= opt.texto %></th>
+                    <th><%= opt.numeroVotos %></th>
+                </tr>
+            <% }); %>
+        </table>
+
+    </div>
+</body>
+</html>

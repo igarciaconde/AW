@@ -1,0 +1,55 @@
+
+
+añadimos directorio controllers + directorio models + directorio routers
+
+
+Estructura
+
+-> Routers o manejadores de ruta
+    const miRouter = expres.router()
+    const controllador = require("./controlller_1)
+
+    miRouter.get("/url", controllador.fc1)
+    ...
+    ...
+    mas funciones del router
+    module.exports = miRouter
+
+-> Controllers 
+    cada router tiene su propio Controllers
+
+    const model_1 = require("./models/model1)
+
+    function fc1(request, response, next){
+        //estas funciones son las que manejan las responses y request 
+    }
+
+    module.exports = fc1...
+
+-> Models
+    los controllers trabajan con varios modelos
+    class model1{
+        constructo(pool){
+
+        }
+
+        //metodos de la clase
+    }
+
+
+--> app
+
+routers = require(router_1)
+
+app = express()
+
+1.set
+
+2.use->middlewares generales
+
+3.app.use(/ruta, router)
+
+404
+500
+
+listen

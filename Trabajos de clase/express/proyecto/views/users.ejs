@@ -4,9 +4,17 @@
     <title>Document</title>
 </head>
 <body>
+    <h1>Gestión de usuarios</h1>
     <ul>
+        <%let i= 0%>
         <% users.forEach(function(user){ %>
-            <li><%=user%></li>
+            <li><%=user%> <a href="/usuarios/borrar/<%=i%>">borrar</a> <span>
+                <form style="display: inline;" method="POST" action="/usuarios/borrar">
+                    <input  type="hidden" name="usId" value="<%=i%>">
+                    <input  type="submit" value="delete">
+                </form></span>
+            </li>
+            <%i++%>
         <%})%>
     </ul>
 </body>
