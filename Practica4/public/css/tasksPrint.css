@@ -1,0 +1,68 @@
+main {
+  font-family: Helvetica;
+  font-size: 12px;
+}
+
+#perfil {
+  display: none;
+}
+
+#user {
+  display: none;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+}
+
+.item {
+  display: flex;
+  flex-direction: row;
+  padding: 2%;
+}
+
+#done {
+  margin-left: 5%;
+  text-decoration: line-through;
+}
+
+footer {
+  display: none;
+}
+
+button {
+  display: none;
+}
+
+.tags {
+  display: flex;
+  flex-direction: row;
+  margin-top: 0.5%;
+}
+
+.tag {
+  margin-left: 20%;
+}
+
+.tag::before {
+  content: "(";
+}
+
+.tag::after {
+  content: ") ";
+}
+
+.title {
+  align-items: center;
+  font-size: 18px;
+}
+
+.title::before {
+  content: "·";
+}
+
+.title::after {
+  content: ": ";
+  
+}
