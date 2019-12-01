@@ -15,6 +15,7 @@ function freplace(fichero, buscar, sustituir, callback){
     }
 };
 
+
 function replaceSpaces(fichero, callback){
     try {
         let text = fs.readFileSync(fichero, {encoding: "utf-8"});
